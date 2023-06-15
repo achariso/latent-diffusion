@@ -1,1 +1,1 @@
-from ants.ldm.ldm.modules.losses.contperceptual import LPIPSWithDiscriminator
+from ants.libs.ldm.ldm.modules.losses.contperceptual import LPIPSWithDiscriminator

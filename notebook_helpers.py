@@ -1,5 +1,5 @@
 from torchvision.datasets.utils import download_url
-from ants.ldm.ldm.util import instantiate_from_config
+from ants.libs.ldm.ldm.util import instantiate_from_config
 import torch
 import os
 # todo ?
@@ -10,8 +10,8 @@ from PIL import Image
 from numpy import asarray
 from einops import rearrange, repeat
 import torch, torchvision
-from ants.ldm.ldm.models.diffusion.ddim import DDIMSampler
-from ants.ldm.ldm.util import ismap
+from ants.libs.ldm.ldm.models.diffusion.ddim import DDIMSampler
+from ants.libs.ldm.ldm.util import ismap
 import time
 from omegaconf import OmegaConf
 

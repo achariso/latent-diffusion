@@ -3,12 +3,12 @@ import pytorch_lightning as pl
 import torch.nn.functional as F
 from contextlib import contextmanager
 
-from ants.taming.taming.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
+from ants.libs.taming.taming.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
 
-from ants.ldm.ldm.modules.diffusionmodules.model import Encoder, Decoder
-from ants.ldm.ldm.modules.distributions.distributions import DiagonalGaussianDistribution
+from ants.libs.ldm.ldm.modules.diffusionmodules.model import Encoder, Decoder
+from ants.libs.ldm.ldm.modules.distributions.distributions import DiagonalGaussianDistribution
 
-from ants.ldm.ldm.util import instantiate_from_config
+from ants.libs.ldm.ldm.util import instantiate_from_config
 
 
 class VQModel(pl.LightningModule):

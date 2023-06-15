@@ -8,7 +8,7 @@ import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
 
-from ants.ldm.ldm.modules.diffusionmodules.util import (
+from ants.libs.ldm.ldm.modules.diffusionmodules.util import (
     checkpoint,
     conv_nd,
     linear,
@@ -17,7 +17,7 @@ from ants.ldm.ldm.modules.diffusionmodules.util import (
     normalization,
     timestep_embedding,
 )
-from ants.ldm.ldm.modules.attention import SpatialTransformer
+from ants.libs.ldm.ldm.modules.attention import SpatialTransformer
 
 
 # dummy replace

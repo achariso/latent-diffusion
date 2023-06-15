@@ -5,7 +5,7 @@ from tqdm import tqdm
 import numpy as np
 import torch
 from main import instantiate_from_config
-from ants.ldm.ldm.models.diffusion.ddim import DDIMSampler
+from ants.libs.ldm.ldm.models.diffusion.ddim import DDIMSampler
 
 
 def make_batch(image, mask, device):

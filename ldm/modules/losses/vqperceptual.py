@@ -3,9 +3,9 @@ from torch import nn
 import torch.nn.functional as F
 from einops import repeat
 
-from ants.taming.taming.modules.discriminator.model import NLayerDiscriminator, weights_init
-from ants.taming.taming.modules.losses.lpips import LPIPS
-from ants.taming.taming.modules.losses.vqperceptual import hinge_d_loss, vanilla_d_loss
+from ants.libs.taming.taming.modules.discriminator.model import NLayerDiscriminator, weights_init
+from ants.libs.taming.taming.modules.losses.lpips import LPIPS
+from ants.libs.taming.taming.modules.losses.vqperceptual import hinge_d_loss, vanilla_d_loss
 
 
 def hinge_d_loss_with_exemplar_weights(logits_real, logits_fake, weights):

@@ -7,8 +7,8 @@ from tqdm import trange
 from omegaconf import OmegaConf
 from PIL import Image
 
-from ants.ldm.ldm.models.diffusion.ddim import DDIMSampler
-from ants.ldm.ldm.util import instantiate_from_config
+from ants.libs.ldm.ldm.models.diffusion.ddim import DDIMSampler
+from ants.libs.ldm.ldm.util import instantiate_from_config
 
 rescale = lambda x: (x + 1.) / 2.
 
